@@ -6,12 +6,12 @@ describe('Garden', function () {
       .toEqual(['radishes', 'clover', 'grass', 'grass']);
   });
 
-  xit('another for Alice', function () {
+  it('another for Alice', function () {
     expect(new Garden('VC\nRC', ['Alice']).alice)
       .toEqual(['violets', 'clover', 'radishes', 'clover']);
   });
 
-  xit('for Bob', function () {
+  it('for Bob', function () {
     expect(new Garden('VVCG\nVVRC', ['Alice', 'Bob']).bob)
       .toEqual(['clover', 'grass', 'radishes', 'clover']);
   });
